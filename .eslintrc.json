@@ -1,0 +1,55 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": ["airbnb-typescript/base"],
+  "root": true,
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2019,//
+    "sourceType": "module",
+    "trailingComma": "all"
+  },
+  "rules": {
+    "import/no-unresolved": 0,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "mjs": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "linebreak-style": 0,
+    "max-len": ["error", { "code": 125 }],
+    "no-await-in-loop": 0
+  },
+  "settings": {
+    "import/extensions": [".js", ".json", ".jsx", ".ts", ".tsx"],
+    "import/resolver": "webpack",
+    "brace-style": [
+      false,
+      "stroustrup",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "function-name": [
+      true,
+      {
+        "function-regex": "^[a-zA-Z$][\\w\\d]+$",
+        "method-regex": "^[a-z$][\\w\\d]+$",
+        "private-method-regex": "^[a-z$][\\w\\d]+$",
+        "protected-method-regex": "^[a-z$][\\w\\d]+$",
+        "static-method-regex": "^[a-z$][\\w\\d]+$"
+      }
+    ]
+  }
+}
+  

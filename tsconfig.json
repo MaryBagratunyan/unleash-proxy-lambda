@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "sourceRoot": "/",
+    "target": "es2020",
+    "outDir": ".build",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "lib": ["es2020"],
+    "rootDir": "./src",
+    "resolveJsonModule": true
+  }
+}
